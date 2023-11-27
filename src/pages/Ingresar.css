@@ -1,0 +1,51 @@
+h1 {
+    margin-bottom: 15px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+}
+
+
+input {
+    background-color:  rgb(224, 224, 224);
+    margin-bottom: 10px;
+    border: none;
+    height: 25px;
+    width: 8cm;
+    border-radius: 2mm;
+    font-size: 16px;
+    padding: 3px;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-login {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(68, 68, 68);
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+    height: 37px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding-inline: 40px;
+    width: fit-content;
+}
+
+.btn-login:hover {
+    background-color: rgb(68, 68, 68);
+    border-color: rgb(68, 68, 68);
+    color: white;
+    transition: .309s;
+}
+
+body {
+    background-color: rgb(179, 161, 124);
+}

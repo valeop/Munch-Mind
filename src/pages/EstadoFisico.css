@@ -1,0 +1,54 @@
+.physical-intro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom: 20px;
+
+}
+
+.separador {
+    border-top-style:solid;
+    border-color:  rgb(153, 151, 151);
+    border-width: 1px;
+}
+
+.txt-physical {
+    width: 50%;
+    text-align: center;
+
+}
+
+.IMC-block,
+.fat-block {
+    margin-top: 40px;
+    margin-left: 15px;
+    padding-bottom: 20px;
+
+}
+
+.txt-IMC,
+.txt-fat {
+    text-align: justify;
+    width: 50%;
+}
+
+.IMC-calc,
+.fat-calc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.IMC-calc input,
+.fat-calc input {
+    width: 100px;
+}
+
+.calc-input {
+    display: flex;
+    flex-direction: column;
+
+}

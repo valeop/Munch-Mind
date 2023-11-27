@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+
+* {
+    color: rgb(34, 34, 34);
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+}
+
+input {
+    background-color: rgba(224, 224, 224, 0);
+    border-color: rgb(180, 180, 180);
+    border-style: solid;
+    border-radius: 2mm;
+    border-width: 1px;
+    cursor: text;
+    font-size: 16px;
+    height: 25px;
+    margin-bottom: 10px;
+    width: 7cm;
+    padding: 3px;
+}
+
+select {
+    background-color: rgb(224, 224, 224);
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    height: 31px;
+    border-radius: 2mm;
+    font-size: 16px;
+    padding: 3px;
+    width: fit-content;
+}
+
+.App-navbar {
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    height: 60px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.App-logo {
+    pointer-events: none;
+    width: 20%;
+}
+
+.Image-logo {
+    margin-top: 6px;
+    padding-left: 10px;
+    pointer-events: none;
+    width: 100%;
+}
+
+.Navbar-buttons {
+    height: 100%;
+    margin-left: 40px;
+    width: 100%;
+}
+
+.Navbar-buttons button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    height: 100%;
+    padding-inline: 11px;
+}
+
+.Navbar-buttons button:hover {
+    border-bottom-style: solid;
+    border-color: rgb(34, 34, 34);
+    transition: .085s;
+}
+
+.Buttons-block {
+    position: fixed;
+    left: 78%;
+    top: 11px;
+}
+
+.Buttons-block button {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2mm;
+    border-color: rgb(68, 68, 68);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    height: 10mm;
+    margin-inline: 10px;
+}
+
+.Buttons-block button:hover {
+    background-color: rgb(68, 68, 68);
+    color: #fff5f5;
+    transition: .309s;
+}
+
+.Icon-block {
+    pointer-events: none;
+    position: fixed;
+    left: 93%;
+    top: 85%;
+}
+
+.Icon {
+    pointer-events: none;
+    width: 80px;
+}
+
+body {
+    background-color: #eeeeee;
+}

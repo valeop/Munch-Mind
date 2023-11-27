@@ -1,0 +1,43 @@
+.sleep-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+.txt-sleep {
+    width: 50%;
+    text-align: justify;
+}
+
+.etapas-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.etapas-box p {
+    width: 50%;
+    text-align: justify;
+}
+
+.sleep-calc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sleep-calc p {
+    width: 50%;
+    text-align: justify;
+}
+
+.respuesta-box p{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
