@@ -2,8 +2,9 @@ import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
 export const Navbar = () => {
+
   return (
-    <>
+    <div>
       <header>
         <div className='App-navbar'>
           <span className='App-logo'>
@@ -26,6 +27,6 @@ export const Navbar = () => {
         <img className='Icon' src='./Images/Happy-icon.png' alt='Icono feliz' />
       </div>
       <Outlet />
-    </>
+    </div>
   )
 }

@@ -2,7 +2,7 @@ import './Registrar.css';
 import { useState } from 'react';
 import UsuarioService from '../services/UsuarioService';
 import { useNavigate } from 'react-router-dom';
-import { error } from 'console';
+import axios from 'axios';
 
 
 
@@ -17,15 +17,24 @@ export const Registrar = () => {
     const [password, setPassword] = useState("")
     const navigate = useNavigate();
 
-    const saveUsuario = (e) => {
-        event.preventDefault();
-        const registro = { name, surname, dateBirth, height, gender, email, password };
-        UsuarioService.createUsuario(registro).then((response) => {
-            console.log(response.data);
-            navigate('/')
-        }).catch(error => {
-            console.log(error)
-        })
+    const createUser = async () => {
+        const data = {
+            name: name,
+            surname: surname,
+            dateBirth: dateBirth,
+            height: height,
+            gender: gender,
+            email: email,
+            password: password
+        }
+
+        const response = await axios.post("http://localhost:8080/api/v1/usuarios", data);
+
+        if (response.status === 201) {
+            alert("Usuario creado correctamente");
+        } else {
+            alert("Error al crear el usuario");
+        }
     }
     //const { register, handleSubmit, formState: { errors } } = useForm();
     // {errors.password && <span className='error'>Contraseña requerida</span>}
@@ -72,7 +81,7 @@ export const Registrar = () => {
                         <input type='password' value={password} id='password' name='password' onChange={(e) => setPassword(e.target.value)} />
                     </div>
                 </div>
-                <input type='submit' className='btn-signup' value='Registrar' onClick={(e) => saveUsuario(e)} />
+                <input type='submit' className='btn-signup' value='Registrar' onClick={(e) => createUser} />
             </form>
         </>
     );
